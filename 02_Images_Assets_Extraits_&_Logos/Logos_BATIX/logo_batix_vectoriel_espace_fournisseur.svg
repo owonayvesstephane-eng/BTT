@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" width="100%" height="100%">
+  <defs>
+    <linearGradient id="pinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="50%" stop-color="#16A34A"/>
+      <stop offset="100%" stop-color="#065F46"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <linearGradient id="bldgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A5F"/>
+      <stop offset="100%" stop-color="#071624"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#10B981" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Pin Outer Shape -->
+  <path d="M200 18 C142 18 96 64 96 122 C96 168 200 226 200 226 C200 226 304 168 304 122 C304 64 258 18 200 18 Z" fill="url(#pinGrad)" filter="url(#glow)"/>
+  
+  <!-- Inner White Circle -->
+  <circle cx="200" cy="116" r="78" fill="#FFFFFF"/>
+
+  <!-- Buildings Silhouette -->
+  <rect x="142" y="84" width="16" height="58" fill="url(#bldgGrad)" rx="2"/>
+  <rect x="162" y="66" width="20" height="76" fill="url(#bldgGrad)" rx="2"/>
+  <polygon points="186,54 206,44 206,142 186,142" fill="url(#bldgGrad)"/>
+
+  <!-- Construction Crane -->
+  <line x1="226" y1="54" x2="226" y2="115" stroke="#0B253A" stroke-width="4"/>
+  <line x1="202" y1="62" x2="258" y2="62" stroke="#0B253A" stroke-width="3.5"/>
+  <polygon points="220,62 226,52 232,62" fill="none" stroke="#0B253A" stroke-width="2.5"/>
+  <line x1="248" y1="62" x2="248" y2="82" stroke="#0B253A" stroke-width="2"/>
+  <rect x="242" y="82" width="12" height="7" fill="#F59E0B" rx="1.5"/>
+
+  <!-- Dynamic Orange Swooshes -->
+  <path d="M118 148 Q165 118 235 114" fill="none" stroke="url(#orangeGrad)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M276 88 C318 104 306 154 254 172" fill="none" stroke="url(#orangeGrad)" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Highway / Road -->
+  <path d="M132 162 Q175 130 245 128 L262 152 Q195 162 165 190 Z" fill="#071927"/>
+  <line x1="156" y1="172" x2="174" y2="158" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <line x1="188" y1="149" x2="206" y2="142" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Delivery Truck -->
+  <g transform="translate(185, 96)">
+    <!-- Trailer -->
+    <polygon points="0,8 48,2 48,32 0,34" fill="#0B253A" stroke="#FFFFFF" stroke-width="1.5"/>
+    <!-- Cabin -->
+    <path d="M49,8 L68,10 C72,11 75,15 76,22 L76,34 L49,33 Z" fill="#0B253A" stroke="#FFFFFF" stroke-width="1.5"/>
+    <polygon points="53,12 69,14 72,22 53,22" fill="#E2E8F0"/>
+    <!-- Wheels -->
+    <circle cx="12" cy="35" r="5" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="24" cy="35" r="5" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="62" cy="35" r="5.5" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+  </g>
+
+  <!-- BATIX Typography -->
+  <g font-family="Montserrat, Inter, Arial Black, sans-serif" font-weight="900" font-size="54" letter-spacing="2">
+    <text x="72" y="275" fill="#FFFFFF">BATI</text>
+    <text x="248" y="275" fill="url(#orangeGrad)">X</text>
+  </g>
+  <!-- Window icon inside the 'A' of BATIX -->
+  <g fill="#F59E0B" transform="translate(154, 256)">
+    <rect x="0" y="0" width="5" height="5" rx="0.8"/>
+    <rect x="6.5" y="0" width="5" height="5" rx="0.8"/>
+    <rect x="0" y="6.5" width="5" height="5" rx="0.8"/>
+    <rect x="6.5" y="6.5" width="5" height="5" rx="0.8"/>
+  </g>
+
+  <!-- Subtitle -->
+  <text x="200" y="304" font-family="Inter, Roboto, sans-serif" font-weight="600" font-size="14.5" fill="#D1DCE5" text-anchor="middle">ESPACE FOURNISSEUR</text>
+</svg>

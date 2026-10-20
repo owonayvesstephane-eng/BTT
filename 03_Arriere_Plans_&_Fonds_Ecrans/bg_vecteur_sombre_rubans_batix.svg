@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 2400" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgDark" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#071925"/>
+      <stop offset="50%" stop-color="#0A2232"/>
+      <stop offset="100%" stop-color="#041018"/>
+    </linearGradient>
+    <radialGradient id="topGlow" cx="50%" cy="22%" r="45%">
+      <stop offset="0%" stop-color="#10B981" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#10B981" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ribOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <linearGradient id="ribGreen" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="100%" stop-color="#059669"/>
+    </linearGradient>
+  </defs>
+  <rect width="1080" height="2400" fill="url(#bgDark)"/>
+  <rect width="1080" height="2400" fill="url(#topGlow)"/>
+  <!-- Top right accent ribbon -->
+  <polygon points="820,0 1080,0 1080,260" fill="url(#ribGreen)" opacity="0.45"/>
+  <polygon points="920,0 1080,0 1080,160" fill="url(#ribOrange)" opacity="0.65"/>
+  <!-- Bottom left ribbons -->
+  <polygon points="0,1980 480,2400 320,2400 0,2120" fill="url(#ribOrange)" opacity="0.9"/>
+  <polygon points="0,2120 320,2400 160,2400 0,2260" fill="url(#ribGreen)" opacity="0.9"/>
+  <!-- Bottom right ribbons -->
+  <polygon points="1080,1960 560,2400 740,2400 1080,2110" fill="url(#ribGreen)" opacity="0.85"/>
+  <polygon points="1080,2110 740,2400 900,2400 1080,2250" fill="url(#ribOrange)" opacity="0.9"/>
+</svg>

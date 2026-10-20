@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 310" width="400" height="310">
+  <defs>
+    <linearGradient id="pinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34D399"/>
+      <stop offset="50%" stop-color="#16A34A"/>
+      <stop offset="100%" stop-color="#065F46"/>
+    </linearGradient>
+    <linearGradient id="orangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24"/>
+      <stop offset="50%" stop-color="#F59E0B"/>
+      <stop offset="100%" stop-color="#EA580C"/>
+    </linearGradient>
+    <linearGradient id="bldgGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E3A5F"/>
+      <stop offset="100%" stop-color="#071624"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="310" rx="24" fill="#061621"/>
+  <!-- Pin Outer Shape -->
+  <path d="M200 18 C142 18 96 64 96 122 C96 168 200 222 200 222 C200 222 304 168 304 122 C304 64 258 18 200 18 Z" fill="url(#pinGrad)"/>
+  <circle cx="200" cy="116" r="76" fill="#FFFFFF"/>
+
+  <!-- Buildings Silhouette -->
+  <rect x="142" y="84" width="16" height="58" fill="url(#bldgGrad)" rx="2"/>
+  <rect x="162" y="66" width="20" height="76" fill="url(#bldgGrad)" rx="2"/>
+  <polygon points="186,54 206,44 206,142 186,142" fill="url(#bldgGrad)"/>
+
+  <!-- Construction Crane -->
+  <line x1="226" y1="54" x2="226" y2="115" stroke="#0B253A" stroke-width="4"/>
+  <line x1="202" y1="62" x2="258" y2="62" stroke="#0B253A" stroke-width="3.5"/>
+  <polygon points="220,62 226,52 232,62" fill="none" stroke="#0B253A" stroke-width="2.5"/>
+  <line x1="248" y1="62" x2="248" y2="82" stroke="#0B253A" stroke-width="2"/>
+  <rect x="242" y="82" width="12" height="7" fill="#F59E0B" rx="1.5"/>
+
+  <!-- Dynamic Orange Swooshes -->
+  <path d="M118 148 Q165 118 235 114" fill="none" stroke="url(#orangeGrad)" stroke-width="8" stroke-linecap="round"/>
+  <path d="M276 88 C318 104 306 154 254 172" fill="none" stroke="url(#orangeGrad)" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Highway / Road -->
+  <path d="M132 162 Q175 130 245 128 L262 152 Q195 162 165 190 Z" fill="#071927"/>
+  <line x1="156" y1="172" x2="174" y2="158" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  <line x1="188" y1="149" x2="206" y2="142" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Delivery Truck -->
+  <g transform="translate(185, 96)">
+    <polygon points="0,8 48,2 48,32 0,34" fill="#0B253A" stroke="#FFFFFF" stroke-width="1.5"/>
+    <path d="M49,8 L68,10 C72,11 75,15 76,22 L76,34 L49,33 Z" fill="#0B253A" stroke="#FFFFFF" stroke-width="1.5"/>
+    <polygon points="53,12 69,14 72,22 53,22" fill="#E2E8F0"/>
+    <circle cx="12" cy="35" r="5" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="24" cy="35" r="5" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+    <circle cx="62" cy="35" r="5.5" fill="#0F172A" stroke="#FFFFFF" stroke-width="2"/>
+  </g>
+
+  <!-- Vector Paths for B A T I X (No external font needed) -->
+  <g transform="translate(68, 234)">
+    <!-- B -->
+    <path d="M0,0 H34 C44,0 50,5 50,12.5 C50,18 46,21.5 41,23 C47,24.5 52,29 52,35.5 C52,44 45,48 34,48 H0 Z M14,10 V19 H31 C34.5,19 37,17 37,14.5 C37,12 34.5,10 31,10 Z M14,28 V38 H32 C36,38 38.5,36 38.5,33 C38.5,30 36,28 32,28 Z" fill="#FFFFFF"/>
+    <!-- A -->
+    <path d="M80,0 L98,0 L122,48 H106 L101,37 H77 L72,48 H56 Z M89,13 L81,29 H97 Z" fill="#FFFFFF"/>
+    <!-- Orange Window inside A -->
+    <rect x="83" y="39" width="5" height="5" fill="#F59E0B"/>
+    <rect x="90" y="39" width="5" height="5" fill="#F59E0B"/>
+    <!-- T -->
+    <path d="M124,0 H174 V11 H156 V48 H142 V11 H124 Z" fill="#FFFFFF"/>
+    <!-- I -->
+    <rect x="182" y="0" width="14" height="48" fill="#FFFFFF"/>
+    <!-- X (Orange Gradient) -->
+    <path d="M204,0 H221 L234,17 L247,0 H264 L243,24 L265,48 H248 L234,31 L220,48 H203 L225,24 Z" fill="url(#orangeGrad)"/>
+  </g>
+</svg>
